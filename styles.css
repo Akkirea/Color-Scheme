@@ -34,9 +34,9 @@ justify-content: space-around;
 } */
 
 .box {
-    width: 51px;
-    height: 34px;
-    background-color: aqua;
+    width: 61px;
+    height: 42px;
+    background-color: #F55A5A;
     border: 5px solid #D1D5DB;
     border-color: #E5E5E5;
     box-shadow: 1px solid black;
