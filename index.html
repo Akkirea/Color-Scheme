@@ -15,25 +15,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <section>
         <header>
-            <!-- <img id="color-picker" src="images/colorPicker.png" alt="Color Picker"> -->
-            <div class="box" id="box"></div>
-            <label for="colors" id="dropbox">
-                <select name="colors" id="dropbox">
-                    <option id="values" value="monochrome">Monochrome</option>
-                    <option id="values" value="monochrome-dark">Monochrome-dark</option>
-                    <option id="values" value="monochrome-light">Monochrome-light</option>
-                    <option id="values" value="analogic">Analogic</option>
-                    <option id="values" value="complement">Complement</option>
-                    <option id="values" value="analogic-complement">Analogic-complement</option>
-                    <option id="values" value="triad">Triad</option>
-                </select>
-            </label>
-            
-            <button>Get Color Scheme</button>
+                <input type="color" id="color-picker" class="color-picker">
+                <label for="colors" id="dropbox">
+                    <select name="colors" id="scheme-picker">
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome-dark</option>
+                        <option value="monochrome-light">Monochrome-light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic-complement</option>
+                        <option value="triad">Triad</option>
+                    </select>
+                </label>
+                <button class="btn" id="btn">Get Color Scheme</button>
         </header>
-    </div>
+
+        <main>
+            
+        </main>
+    </section>
+    
+    
     <script src="index.js"></script> 
 </body>
 </html>

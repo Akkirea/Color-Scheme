@@ -7,64 +7,64 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
+    
 }
 
-.container {
+section {
+    background-color: #1F2937;
     max-width: 550px;
     height: 550px;
-    background-color: #1F2937;
-    display: flex;
-    justify-content: baseline;
-    align-items: flex-start;
-    margin: 0 auto;
+    margin: auto;
 }
 
 header {
-margin: 1.25em 0.75em;
-width: 518px;
+margin: 1.25em 0;
+width: 550px;
+height: 90px;
 display: flex;
-justify-content: space-around;
-
+justify-content: space-evenly;
+align-items: center;
 }
 
-/* #color-picker {
-    width: 61px;
-    height: 47px;
-    padding-top: 5px;
-} */
 
-.box {
+/* COLOR-PICKER BOX */
+.color-picker {
     width: 61px;
     height: 42px;
-    background-color: #F55A5A;
-    border: 5px solid #D1D5DB;
-    border-color: #E5E5E5;
-    box-shadow: 1px solid black;
+    border: 0.5px solid #D1D5DB;
     }
 
 
-#dropbox{
+/* VALUES DROPBOX */
+#scheme-picker{
     width: 312px;
     height: 40px;
     color: #D1D5DB;
-    background-color: #1F293A;
+    background-color: transparent !important;
     border-color: #D1D5DB;
     border-radius: 6px;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
+    cursor: pointer;
 }
 
-#values{
-    background-color: #1F293A;
-}
-
-
-button {
-height: 40px;
+.btn {
+ width: 123px;
+ height: 40px;
  background-color: #3D4B60;
  color: #FFFFFF;
  border: none;
  border-radius: 2px;
+ font-size: 0.75rem;
+ cursor: pointer;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.colors{
+    height: 416px;
+}
