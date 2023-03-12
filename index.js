@@ -1,5 +1,5 @@
 const btn = document.getElementById('btn')
-const main = document.getElementById('main')
+
 
 btn.addEventListener('click', function(event){
     event.preventDefault()
@@ -19,5 +19,10 @@ btn.addEventListener('click', function(event){
 })
 
 
-
+document.querySelector(".hex-codes").addEventListener('click', function(){
+    let copyText = document.querySelector(".colors")
+    navigator.clipboard.writeText(copyText).then(()=>{
+        alert("Copied to clipboard")
+    })
+})
 
